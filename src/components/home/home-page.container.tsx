@@ -2,6 +2,8 @@ import {connect} from "react-redux";
 import {HomePage} from "./home-page";
 import {HomePageState} from "../../reducers/home-page-reducer";
 import {IReducers} from "../../reducers/index";
+import { setVideoUrl } from "../../actions/set-video-url";
+import { onError } from "../../actions/error";
 
 export const homePageContainer = connect(
     mapStateToProps,
@@ -10,10 +12,13 @@ export const homePageContainer = connect(
 
 function mapStateToProps(state: IReducers): HomePageState {
     return {
+        getUserMedia: state.homePageReducer.getUserMedia
     };
 }
 
 function mapDispatchToProps(dispatch) {
     return {
+        onSuccess: (stream: any) => dispatch(setVideoUrl(stream)),
+        onError: (message: Error) => dispatch(onError(message))
     };
 }

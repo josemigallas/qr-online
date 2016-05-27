@@ -13,7 +13,7 @@ export class Scanner extends React.Component<Props, {}> {
     public render(): JSX.Element {
         return (
             <div>
-                <video autoPlay="true" src={ this.props.url }></video>
+                <video className="video" autoPlay="true" src={ this.props.url }></video>
             </div>
         );
     }

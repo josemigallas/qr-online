@@ -3,7 +3,7 @@ import { Scanner } from "./scanner";
 import { HomePageState } from "../../reducers/home-page-reducer";
 
 export interface Props extends React.Props<HomePage> {
-    stream?: any;
+    stream: any;
 
     getUserMedia: (
         options: { video?: boolean; audio?: boolean },
@@ -24,7 +24,7 @@ export class HomePage extends React.Component<Props, {}> {
     }
 
     public componentWillMount(): void {
-        this.props.getUserMedia({ video: true }, this.props.onSuccess, this.props.onError)
+        this.props.getUserMedia.call(navigator, { video: true }, this.props.onSuccess, this.props.onError);
     }
 
     public componentWillUpdate(nextProps: Props, nextState: HomePageState): void {
@@ -35,8 +35,7 @@ export class HomePage extends React.Component<Props, {}> {
 
     public render(): JSX.Element {
         return (
-            <div className="">
-            fsjdklfajdkl
+            <div>
                 <Scanner url={ this.url } />
             </div>
         );

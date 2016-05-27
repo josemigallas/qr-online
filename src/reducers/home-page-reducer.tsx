@@ -1,11 +1,12 @@
 import objectAssign = require("object-assign");
 import {IAction} from "redux";
 import {Actions} from "../actions/actions";
-import { ISetVideoUrl } from "../actions/set-video-url";
-import { IError } from "../actions/error";
+import {ISetVideoUrl} from "../actions/set-video-url";
+import {IError} from "../actions/error";
 
 export class HomePageState {
 
+    public stream: any;
     public getUserMedia: (
         options: { video?: boolean; audio?: boolean },
         onSuccess: (stream: any) => void,

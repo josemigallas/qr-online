@@ -12,6 +12,7 @@ export const homePageContainer = connect(
 
 function mapStateToProps(state: IReducers): HomePageState {
     return {
+        stream: state.homePageReducer.stream,
         getUserMedia: state.homePageReducer.getUserMedia
     };
 }

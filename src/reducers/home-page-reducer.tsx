@@ -23,13 +23,11 @@ export function homePageReducer(state: HomePageState = new HomePageState(), acti
     switch (action.type) {
         case Actions.SET_VIDEO_URL:
             const caseSetVideoUrl = action as ISetVideoUrl;
-            const newState = objectAssign({}, state, { stream: caseSetVideoUrl.stream });
-            return newState;
+            return objectAssign({}, state, { stream: caseSetVideoUrl.stream });
 
         case Actions.ERROR:
             const caseError = action as IError;
-            const newErrorState = objectAssign({}, state, { message: caseError.message });
-            return newErrorState;
+            return objectAssign({}, state, { message: caseError.message });
 
         default:
             return state;

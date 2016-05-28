@@ -2,8 +2,8 @@ import {connect} from "react-redux";
 import {HomePage} from "./home-page";
 import {HomePageState} from "../../reducers/home-page-reducer";
 import {IReducers} from "../../reducers/index";
-import { setVideoUrl } from "../../actions/set-video-url";
-import { onError } from "../../actions/error";
+import {setVideoUrl}  from "../../actions/set-video-url";
+import {onError} from "../../actions/on-error";
 
 export const homePageContainer = connect(
     mapStateToProps,

@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Scanner } from "./scanner";
-import { HomePageState } from "../../reducers/home-page-reducer";
+import {Scanner} from "./scanner";
+import {HomePageState} from "../../reducers/home-page-reducer";
 
 export interface Props extends React.Props<HomePage> {
     stream: any;

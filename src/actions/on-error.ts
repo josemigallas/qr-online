@@ -1,5 +1,5 @@
-import { Actions } from "./actions";
-import { IAction } from "redux";
+import {Actions} from "./actions";
+import {IAction} from "redux";
 
 export interface IError extends IAction {
     message: Error;

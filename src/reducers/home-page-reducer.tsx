@@ -2,7 +2,7 @@ import objectAssign = require("object-assign");
 import {IAction} from "redux";
 import {Actions} from "../actions/actions";
 import {ISetVideoUrl} from "../actions/set-video-url";
-import {IError} from "../actions/error";
+import {IError} from "../actions/on-error";
 
 export class HomePageState {
 

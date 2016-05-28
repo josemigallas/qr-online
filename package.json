@@ -19,6 +19,7 @@
   "dependencies": {
     "bootstrap": "^3.3.5",
     "jquery": "^2.1.4",
+    "jsqr": "^0.1.2",
     "object-assign": "^4.0.1",
     "react": "^0.14.8",
     "react-dom": "^0.14.7",

@@ -1,4 +1,5 @@
 export enum Actions {
     SET_VIDEO_URL,
-    ERROR
+    ERROR,
+    READ_IMAGE
 }

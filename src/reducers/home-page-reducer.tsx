@@ -3,6 +3,7 @@ import {IAction} from "redux";
 import {Actions} from "../actions/actions";
 import {ISetVideoUrl} from "../actions/set-video-url";
 import {IError} from "../actions/on-error";
+import {IReadImage} from "../actions/read-image";
 
 export class HomePageState {
 
@@ -28,6 +29,10 @@ export function homePageReducer(state: HomePageState = new HomePageState(), acti
         case Actions.ERROR:
             const caseError = action as IError;
             return objectAssign({}, state, { message: caseError.message });
+
+        case Actions.READ_IMAGE:
+            const caseReadImage = action as IReadImage;
+            return objectAssign({}, state, {});
 
         default:
             return state;

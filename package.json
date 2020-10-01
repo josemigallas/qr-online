@@ -1,6 +1,6 @@
 {
   "name": "qr-online",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
@@ -10,32 +10,32 @@
     "type": "git",
     "url": "git+https://github.com/josemigallas/qr-online.git"
   },
-  "author": "josemigallas & tonygcs",
+  "author": "josemigallas, tonygcs & lvillen",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/josemigallas/qr-online/issues"
   },
   "homepage": "https://github.com/josemigallas/qr-online#readme",
   "dependencies": {
-    "bootstrap": "^3.3.5",
-    "jquery": "^2.1.4",
-    "object-assign": "^4.0.1",
-    "react": "^0.14.8",
-    "react-dom": "^0.14.7",
-    "react-redux": "^4.4.1",
-    "react-router": "^2.0.0",
-    "redux": "^3.3.1",
-    "typescript": "^1.8.9"
+    "bootstrap": "4.5.2",
+    "jquery": "^3.5.1",
+    "object-assign": "^4.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "react-router": "^5.2.0",
+    "redux": "^4.0.5",
+    "typescript": "^4.0.3"
   },
   "devDependencies": {
-    "css-loader": "^0.23.1",
+    "css-loader": "^4.3.0",
     "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.8.5",
-    "html-webpack-plugin": "^2.9.0",
-    "style-loader": "^0.13.1",
-    "ts-loader": "^0.8.1",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.12.13",
-    "webpack-dev-server": "^1.10.1"
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.4",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.2",
+    "webpack-dev-server": "^3.11.0"
   }
 }
